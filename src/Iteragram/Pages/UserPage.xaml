@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Iteragram.Pages.UserPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Frame HasShadow="true" AbsoluteLayout.LayoutBounds="0, 0, 1000, 100" BackgroundColor="White" Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
+                <Frame.Padding>
+                    <OnPlatform x:TypeArguments="Thickness" Android="0,0,0,0" iOS="0,20,0,0" WinPhone="0,0,0,0" />
+                </Frame.Padding>
+                <StackLayout HorizontalOptions="FillAndExpand" Spacing="0">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20" BackgroundColor="White">
+                        <Button x:Name="btnBack" Image="ic_arrow_left.png" HorizontalOptions="Start" VerticalOptions="Center"
+                            BorderColor="Transparent"
+                            BackgroundColor="Transparent">
+                            <Button.Margin>
+                            <OnPlatform x:TypeArguments="Thickness"
+                            Android="-30,0,-10,0"
+                            iOS="0,-7,10,0"
+                            WinPhone="0,0,0,0" />
+                        </Button.Margin>
+                        </Button>
+                        <Label Text="ricardosantosmorais" FontSize="22">
+                            <Label.Margin>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                Android="-10,14,0,0"
+                                iOS="0,0,0,0"
+                                WinPhone="0,0,0,0" />
+                            </Label.Margin>
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <AbsoluteLayout x:Name="container" VerticalOptions="FillAndExpand" IsEnabled="false" InputTransparent="true" HorizontalOptions="FillAndExpand">
+                <ContentView x:Name="actIndBackground" BackgroundColor="#222222" Opacity="0.5" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" IsVisible="false" IsEnabled="false">
+                </ContentView>
+                <ActivityIndicator x:Name="actInd" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,3,-1,-1" IsRunning="true" />
+            </AbsoluteLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
