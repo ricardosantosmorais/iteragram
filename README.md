@@ -6,4 +6,7 @@ Bibliotecas:
 Microsoft.Net.Http e Newtonsoft.Json
 
 <img src="https://github.com/ricardosantosmorais/iteragram/blob/master/screenshots/1.png" width="300">
-!["Splash Screen"](https://github.com/ricardosantosmorais/iteragram/blob/master/screenshots/1.png){:height="50%" width="50%"}
+<img src="https://github.com/ricardosantosmorais/iteragram/blob/master/screenshots/2.png" width="300">
+<img src="https://github.com/ricardosantosmorais/iteragram/blob/master/screenshots/3.png" width="300">
+
+
